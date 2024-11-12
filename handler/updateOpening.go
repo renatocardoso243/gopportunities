@@ -7,6 +7,19 @@ import (
 	"github.com/renatocardoso243/gopportunities.git/schemas"
 )
 
+// @BasePath /api/v1
+// @Sumary Update opening
+// @Description Update a job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Param id query string true "Opening identifation"
+// @Param opening body UpdateOpeningRequest true "Opening data"
+// @Success 200 {object} UpdateOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 404 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [put]
 func UpdateOpeningHandler(ctx *gin.Context) {
 	request := UpdateOpeningRequest{}
 
