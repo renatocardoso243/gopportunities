@@ -8,8 +8,8 @@ import (
 )
 
 // @BasePath /api/v1
-// @Sumary Show opening
-// @Description Show a new job opening
+// @Sumary Show openings
+// @Description Show a new job openings
 // @Tags Openings
 // @Accept json
 // @Produce json
